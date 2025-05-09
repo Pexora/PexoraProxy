@@ -1,0 +1,9 @@
+{
+  "id": "pexoraproxy",
+  "name": "PexoraProxy",
+  "version": "1.0.0",
+  "description": "Core plugin für Velocity-Proxy mit modularem System und Datenbankunterstützung",
+  "authors": ["Pexora Development Team"],
+  "dependencies": [],
+  "main": "de.pexora.proxy.PexoraProxy"
+}

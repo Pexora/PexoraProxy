@@ -1,0 +1,30 @@
+# PexoraProxy Nachrichtenkonfiguration
+
+# Präfix für alle Nachrichten
+prefix = "<gold>[PexoraProxy]</gold> "
+
+# Allgemeine Nachrichten
+welcome = "<green>Willkommen auf dem Pexora-Netzwerk!</green>"
+farewell = "<yellow>Auf Wiedersehen!</yellow>"
+
+# Module-Nachrichten
+module_enabled = "<green>Modul <module> wurde aktiviert.</green>"
+module_disabled = "<yellow>Modul <module> wurde deaktiviert.</yellow>"
+module_reloaded = "<green>Modul <module> wurde neu geladen.</green>"
+module_error = "<red>Fehler beim Laden des Moduls <module>: <error></red>"
+
+# Datenbank-Nachrichten
+database_connected = "<green>Datenbankverbindung hergestellt.</green>"
+database_disconnected = "<yellow>Datenbankverbindung getrennt.</yellow>"
+database_error = "<red>Datenbankfehler: <error></red>"
+
+# Fehler-Nachrichten
+error_command = "<red>Fehler bei der Ausführung des Befehls: <error></red>"
+error_permission = "<red>Du hast keine Berechtigung, diesen Befehl auszuführen.</red>"
+error_player_offline = "<red>Der Spieler ist nicht online.</red>"
+error_server_offline = "<red>Der Server ist nicht erreichbar.</red>"
+
+# Informationen
+info_player_count = "<yellow>Es sind <count> Spieler online.</yellow>"
+info_server_count = "<yellow>Es sind <count> Server verbunden.</yellow>"
+info_version = "<yellow>Version: <version></yellow>"

@@ -1,0 +1,48 @@
+# PexoraProxy Nachrichten
+# Diese Datei enthält alle anpassbaren Nachrichten
+
+# Das Präfix für alle Nachrichten
+# Du kannst das MiniMessage-Format für die Formatierung verwenden
+# https://docs.adventure.kyori.net/minimessage/format.html
+prefix: "<gradient:#ff55ff:#aa00ff>[PX]</gradient> "
+
+# Allgemeine Nachrichten
+plugin-enabled: "%prefix% <green>PexoraProxy wurde aktiviert!"
+plugin-disabled: "%prefix% <red>PexoraProxy wurde deaktiviert!"
+plugin-reloaded: "%prefix% <green>PexoraProxy wurde neu geladen!"
+
+# Fehlermeldungen
+error-command-permission: "%prefix% <red>Du hast keine Berechtigung, diesen Befehl zu verwenden!"
+error-player-only: "%prefix% <red>Dieser Befehl kann nur von Spielern verwendet werden!"
+error-console-only: "%prefix% <red>Dieser Befehl kann nur von der Konsole verwendet werden!"
+error-invalid-command: "%prefix% <red>Ungültiger Befehl! Verwende <yellow>/pexora help</yellow> für eine Liste der Befehle."
+error-module-not-found: "%prefix% <red>Modul <yellow>%module%</yellow> wurde nicht gefunden!"
+error-database-connection: "%prefix% <red>Datenbankverbindung konnte nicht hergestellt werden: %error%"
+
+# Modul-Nachrichten
+module-loaded: "%prefix% <green>Modul <yellow>%module%</yellow> wurde geladen!"
+module-unloaded: "%prefix% <red>Modul <yellow>%module%</yellow> wurde entladen!"
+module-reloaded: "%prefix% <green>Modul <yellow>%module%</yellow> wurde neu geladen!"
+module-load-error: "%prefix% <red>Fehler beim Laden des Moduls <yellow>%module%</yellow>: %error%"
+
+# Status-Nachrichten
+status-header: "%prefix% <yellow>PexoraProxy Status"
+status-version: "%prefix% <yellow>Version: <green>%version%"
+status-modules: "%prefix% <yellow>Geladene Module: <green>%count%"
+status-module-entry: "%prefix% <yellow>- %module%: %status%"
+status-database: "%prefix% <yellow>Datenbankverbindung: %status%"
+status-servers: "%prefix% <yellow>Verbundene Server: <green>%count%"
+status-players: "%prefix% <yellow>Online Spieler: <green>%count%"
+
+# Proxy-spezifische Nachrichten
+proxy-player-connect: "%prefix% <green>Spieler <yellow>%player%</yellow> hat den Proxy betreten."
+proxy-player-disconnect: "%prefix% <red>Spieler <yellow>%player%</yellow> hat den Proxy verlassen."
+proxy-player-server-switch: "%prefix% <yellow>Spieler <white>%player%</yellow> wechselt von <yellow>%from%</yellow> zu <yellow>%to%</yellow>."
+proxy-server-connected: "%prefix% <green>Server <yellow>%server%</yellow> wurde verbunden."
+proxy-server-disconnected: "%prefix% <red>Server <yellow>%server%</yellow> wurde getrennt."
+
+# Hilfe-Nachrichten
+help-header: "%prefix% <yellow>PexoraProxy Hilfe"
+help-command-reload: "%prefix% <yellow>/pexora reload</yellow> - Lädt das Plugin neu"
+help-command-status: "%prefix% <yellow>/pexora status</yellow> - Zeigt den Plugin-Status"
+help-command-help: "%prefix% <yellow>/pexora help</yellow> - Zeigt diese Hilfenachricht"

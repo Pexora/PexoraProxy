@@ -1,0 +1,34 @@
+# PexoraProxy Konfigurationsdatei
+
+# Datenbankeinstellungen
+[database]
+enabled = false # Setze auf true, um die Datenbankanbindung zu aktivieren
+host = "localhost"
+port = 3306
+database = "pexora"
+username = "root"
+password = ""
+pool-size = 10
+pool-min-size = 5 # Minimale Anzahl der Verbindungen im Pool
+pool-max-size = 10 # Maximale Anzahl der Verbindungen im Pool
+pool-idle-timeout = 600000 # Timeout für inaktive Verbindungen in ms (10 Minuten)
+pool-max-lifetime = 1800000 # Maximale Lebensdauer einer Verbindung in ms (30 Minuten)
+auto-create-tables = true # Tabellen automatisch erstellen, wenn sie nicht existieren
+
+# Moduleinstellungen
+[modules]
+auto-reload = true # Module automatisch neu laden, wenn das Plugin neu geladen wird
+auto-copy-to-modules = true # Plugins automatisch in den Modules-Ordner kopieren
+delete-old-plugins = true # Alte Plugin-Versionen löschen
+allow-non-pexora-modules = false # Auch Nicht-Pexora-Module laden
+additional-modules = [] # Liste zusätzlicher Module, die geladen werden sollen
+
+# Debug-Einstellungen
+[debug]
+enabled = false # Debug-Modus aktivieren
+log-level = "INFO" # Log-Level: INFO, WARNING, SEVERE
+
+# Messaging-Einstellungen
+[messaging]
+channel = "pexora:proxy" # Kommunikationskanal zwischen Proxy und Server
+throttle-ms = 100 # Minimale Zeit zwischen Nachrichten in Millisekunden
